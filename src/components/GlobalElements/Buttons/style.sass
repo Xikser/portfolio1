@@ -1,0 +1,74 @@
+button
+	position: relative
+	background: transparent
+	border: 0
+	color: $color--light
+	cursor: pointer
+	outline: none
+	transition: all .5s ease
+	z-index: 1
+
+	&::before, &::after
+		position: absolute
+		content: ''
+
+button[buttonStyle=primary]
+	color: $color--dark
+	text-transform: uppercase
+	letter-spacing: 1.25px
+	padding: 0 !important
+
+	span
+		position: relative
+		width: 100px
+		height: 40px
+		transition: transform .3s
+		background: white
+		display: inline-block
+		transform: translateY(0)
+		text-align: center
+		overflow: hidden
+
+		&::before
+			position: absolute
+			background: white
+			width: 100%
+			height: 100%
+			text-align: left
+			line-height: 40px
+			top: 0
+			left: 0
+			content: attr(data-text)
+			transition: all .3s
+			transform: translateY(0)
+
+		&::after
+			position: absolute
+			background: white
+			width: 100%
+			height: 100%
+			text-align: left
+			line-height: 40px
+			top: 0
+			left: 0
+			content: attr(data-text)
+			transition: all .3s
+			transform: translateY(-100%)
+
+	&:hover span::after
+		transform: translateY(0%)
+
+	&:hover span::before
+		transform: translateY(100%)
+
+button[size=normal]
+	font-size: 1.7rem
+	padding: 10px 35px
+
+button[size=large]
+	font-size: 1.5rem
+	padding: 20px 35px
+
+button[size=xlarge]
+	font-size: 1.7rem
+	padding: 10px 50px

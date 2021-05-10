@@ -1,0 +1,70 @@
+<template>
+	<button
+			:buttonStyle="buttonStyle"
+			:size="buttonSize"
+			:type="buttonType"
+			@click="clickButton(buttonText)"
+	>
+		<span :data-text=" buttonText "></span>
+	</button>
+</template>
+
+<script>
+export default {
+	name: 'Button',
+	props: {
+		listName: {
+			type: String,
+		},
+		icon: {
+			type: Boolean,
+		},
+		buttonText: {
+			type: String,
+			required: true,
+		},
+		buttonSize: {
+			type: String,
+			required: true,
+		},
+		buttonStyle: {
+			type: String,
+			required: true,
+		},
+		buttonType: {
+			type: String,
+		},
+		additionalElement: {
+			type: Boolean,
+		},
+	},
+	data() {
+		return {
+			iconDown: true,
+			iconUp: false,
+		}
+	},
+
+	methods: {
+		clickButton(text) {
+			this.$emit('btnClick', text)
+		},
+		changeIcon() {
+			this.iconDown = !this.iconDown
+			this.iconUp = !this.iconUp
+			this.$emit('buttonClicked', this.listName)
+		}
+	}
+}
+</script>
+
+<style lang="sass">
+@import '../../../assets/sass/variables'
+@import './style'
+
+</style>
+
+<style lang="sass" scoped>
+@media screen and (min-width: 360px) and (max-width: 980px)
+
+</style>
