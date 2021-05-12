@@ -40,21 +40,9 @@ export default {
 	},
 	data() {
 		return {
-			iconDown: true,
-			iconUp: false,
+			isActive: false,
 		}
 	},
-
-	methods: {
-		clickButton(text) {
-			this.$emit('btnClick', text)
-		},
-		changeIcon() {
-			this.iconDown = !this.iconDown
-			this.iconUp = !this.iconUp
-			this.$emit('buttonClicked', this.listName)
-		}
-	}
 }
 </script>
 

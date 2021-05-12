@@ -1,22 +1,14 @@
 <template>
-	<router-view v-slot="{ Component }">
-		<main>
-			<Navbar></Navbar>
-			<transition
-					name="view"
-					mode="out-in"
-					@before-leave=""
-			>
-				<component :is="Component"/>
-			</transition>
-		</main>
-	</router-view>
-
+	<Navbar></Navbar>
+	<Main></Main>
+	<Footer></Footer>
 </template>
 <script>
 
+import Main from "./components/Views/Main/Main";
 export default {
 	name: 'App',
+	components: {Main},
 	data() {
 		return {
 			Component: 'Main',
