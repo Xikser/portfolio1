@@ -7,9 +7,9 @@ const routes = [
 		component: () => import('../components/Views/Main/Main')
 	},
 	{
-		path: '/',
+		path: '/about',
 		name: 'O mnie',
-		component: () => import('../components/Views/Main/Main')
+		component: () => import('../components/Views/About/About')
 	},
 	{
 		path: '/',

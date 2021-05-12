@@ -2,7 +2,7 @@ button
 	position: relative
 	background: transparent
 	border: 0
-	color: $color--light
+	color: $color--dark
 	cursor: pointer
 	outline: none
 	transition: all .5s ease
@@ -11,6 +11,14 @@ button
 	&::before, &::after
 		position: absolute
 		content: ''
+
+button[buttonStyle=default]
+	padding: 0
+	font-weight: 400
+	text-decoration: underline
+
+	span
+		color: $color--dark
 
 button[buttonStyle=primary]
 	color: $color--dark
@@ -63,7 +71,6 @@ button[buttonStyle=primary]
 
 button[size=normal]
 	font-size: 1.7rem
-	padding: 10px 35px
 
 button[size=large]
 	font-size: 1.5rem

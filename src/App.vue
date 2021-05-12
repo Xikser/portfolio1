@@ -1,11 +1,6 @@
 <template>
 	<router-view v-slot="{ Component }">
 		<main>
-
-			<div class="top" @click="sc">
-				<i class="fas fa-chevron-up"></i>
-			</div>
-
 			<Navbar></Navbar>
 			<transition
 					name="view"
@@ -14,7 +9,6 @@
 			>
 				<component :is="Component"/>
 			</transition>
-			<Footer></Footer>
 		</main>
 	</router-view>
 
@@ -28,8 +22,7 @@ export default {
 			Component: 'Main',
 		}
 	},
-	mounted() {
-	}
+	mounted() {}
 }
 </script>
 <style lang="sass">
@@ -45,7 +38,7 @@ html
 
 body
 	overflow-x: hidden
-	background: $color--light
+	background: white
 	width: 100%
 	color: $color--dark
 	font-family: $font--default
@@ -55,11 +48,14 @@ main
 	width: 100%
 	margin: auto
 
+.main
+	width: 144em
+
 i
 	color: $color--dark
 
 @media screen and (min-width: 360px) and (max-width: 980px)
-	main
+	.main
 		width: 100vw
 
 	.top

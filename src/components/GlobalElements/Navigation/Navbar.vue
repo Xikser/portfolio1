@@ -130,7 +130,7 @@ export default {
 				left: 0
 				width: 0
 				height: 2px
-				transition: all .4s ease
+				transition: all .3s ease
 				opacity: .7
 				background: $color--dark
 

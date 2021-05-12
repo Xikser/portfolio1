@@ -3,9 +3,9 @@
 			:buttonStyle="buttonStyle"
 			:size="buttonSize"
 			:type="buttonType"
-			@click="clickButton(buttonText)"
 	>
-		<span :data-text=" buttonText "></span>
+		<span v-if="additionalElement" :data-text=" buttonText "></span>
+		<span v-else> {{ buttonText }}</span>
 	</button>
 </template>
 
