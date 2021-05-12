@@ -1,13 +1,26 @@
 .services
+	position: relative
 	min-height: 50vh
-	padding: 100px 0 50px
+	padding: 100px 0 100px
 	background: $color--accent-gray
 	color: $color--light
+
+	.placeholder-1
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 30%
+		height: 50px
+		background: white
+		display: flex
+		align-items: center
+		justify-content: center
 
 	.short
 		position: relative
 		top: -100px
-		width: 40%
+		width: 30%
+		height: 50px
 		background: white
 		text-align: right
 		color: $color--accent-gray
@@ -16,6 +29,7 @@
 		font-family: $font--title
 		font-weight: 400
 		padding: 10px 45px 10px 15px
+		cursor: default
 
 	&__content
 		position: relative
@@ -29,18 +43,28 @@
 		padding: 25px
 		width: 33%
 
+		i
+			font-size: 2.5rem
+			color: $color--accent
+
+		h3
+			margin-top: 30px
+			font-size: 2rem
+			text-transform: uppercase
+			font-family: $font--title
+			letter-spacing: 1.5px
+			font-weight: 400
+
 		&-heading
 			display: flex
 			flex-direction: column
 			align-items: center
 
-		i
-			font-size: 2.8rem
-			color: $color--light
+		&-content
+			padding: 20px 40px
 
-		h3
-			margin-top: 30px
-			font-size: 1.7rem
-			text-transform: uppercase
-			font-weight: 400
+			p
+				font-size: 1.3rem
+				line-height: 23px
+				font-family: $font--primary
 

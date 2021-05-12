@@ -24,7 +24,7 @@ button[buttonStyle=primary]
 	color: $color--dark
 	text-transform: uppercase
 	letter-spacing: 1.25px
-	padding: 0 !important
+	padding: 0
 
 	span
 		position: relative
@@ -42,7 +42,7 @@ button[buttonStyle=primary]
 			background: white
 			width: 100%
 			height: 100%
-			text-align: left
+			text-align: center
 			line-height: 40px
 			top: 0
 			left: 0
@@ -55,7 +55,7 @@ button[buttonStyle=primary]
 			background: white
 			width: 100%
 			height: 100%
-			text-align: left
+			text-align: center
 			line-height: 40px
 			top: 0
 			left: 0
@@ -68,6 +68,21 @@ button[buttonStyle=primary]
 
 	&:hover span::before
 		transform: translateY(100%)
+
+
+
+button[buttonStyle=secondary]
+	color: $color--accent-gray
+	background: white
+	text-transform: uppercase
+	font-weight: 500
+	padding: 10px 25px
+	margin-right: 10px
+	border: 2px solid $color--accent-gray
+
+.is-active
+	background: $color--accent-gray !important
+	color: white !important
 
 button[size=normal]
 	font-size: 1.7rem

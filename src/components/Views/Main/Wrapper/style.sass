@@ -1,0 +1,50 @@
+.wrapper
+	position: relative
+	min-height: 40vh
+	background-image: url("../../../../assets/images/wrapper.jpg")
+	background-attachment: fixed
+	background-position: center
+	background-repeat: no-repeat
+	background-size: 100% 100vh
+	display: flex
+	align-items: center
+	justify-content: flex-end
+
+	&__placeholder1
+		position: absolute
+		top: -30%
+		right: 0
+		width: 10px
+		height: 100%
+		background: $color--accent-gray
+
+	&__content
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		background: $color--accent-gray
+		height: 40vh
+		width: 30%
+
+		h2
+			font-weight: 300
+			text-align: center
+			padding: 0 0 10px 0
+
+			span
+				font-weight: 500
+
+		button
+			border-bottom: 1px solid white
+			font-weight: 300
+			letter-spacing: 1.25px
+
+			span
+				font-size: 2rem
+
+	&__content :is(h2,h3,p, span)
+		color: white
+
+	&__content :is(h2,h3,p)
+		font-size: 2.3rem

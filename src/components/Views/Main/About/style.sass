@@ -1,0 +1,90 @@
+.main-about
+	position: relative
+	min-height: 50vh
+	padding: 100px 0 50px
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-bottom: 150px
+
+	&__content
+		position: relative
+		width: 100%
+		min-height: 40vh
+		display: flex
+		justify-content: space-between
+
+		.placeholder-1
+			position: absolute
+			top: 0
+			right: 0
+			width: 30%
+			height: 100%
+			background: $color--accent-gray
+			z-index: -1
+
+	&__heading
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-evenly
+		width: 40%
+		padding: 50px 25px 50px 100px
+
+		&--placeholder
+			position: absolute
+			width: 200%
+			height: 10px
+			bottom: 0
+			left: 0
+			background: $color--accent-gray
+			z-index: -1
+
+		&::after
+			position: absolute
+			content: ''
+			top: 100%
+			left: 0
+			width: 10px
+			height: 150%
+			background: $color--accent-gray
+			z-index: 2
+
+		h2
+			position: relative
+			font-size: 3rem
+			font-family: $font--title
+			text-align: center
+			font-weight: 200
+			align-self: flex-start
+			margin-bottom: 30px
+
+			span
+				font-weight: 400
+
+			&::before
+				position: absolute
+				content: ''
+				left: 0
+				bottom: -10px
+				width: 120%
+				height: 1px
+				background: black
+
+			&::after
+				position: absolute
+				content: ''
+				bottom: -17px
+				left: 0
+				width: 70%
+				height: 1px
+				background: black
+		p
+			font-size: 1.5rem
+			font-family: $font--primary
+			font-weight: 500
+			line-height: 24px
+
+			span
+				font-weight: 300
