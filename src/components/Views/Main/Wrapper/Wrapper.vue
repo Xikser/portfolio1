@@ -1,5 +1,5 @@
 <template functional>
-	<section class="wrapper" id="contact">
+	<section class="wrapper" >
 
 		<div class="wrapper__placeholder1"></div>
 
@@ -12,12 +12,9 @@
 				</span>
 				</h2>
 
-				<Button
-						buttonStyle="default"
-						buttonSize="normal"
-						buttonText="Skontaktuj się ze mną!"
-				>
-				</Button>
+				<a href="mailto:daniel.wyskup@gmail.com" target="_blank">
+					Skontaktuj się ze mną!
+				</a>
 			</div>
 		</div>
 	</section>

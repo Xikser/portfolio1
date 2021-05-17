@@ -1,5 +1,5 @@
 <template functional>
-	<footer class="footer">
+	<footer class="footer" id="contact">
 		<h2 class="short">Daniel Wyskup</h2>
 		<div class="footer__placeholder1"></div>
 		<div class="footer__content">
