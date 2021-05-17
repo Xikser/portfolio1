@@ -3,110 +3,13 @@
 
 		<h2 class="short">Projekty</h2>
 
-		<nav class="projects__nav">
-			<ul class="projects__list">
-				<li class="projects__list-item">
-					<Button
-							buttonStyle="secondary"
-							buttonSize="normal"
-							buttonText="Wszystko"
-					></Button>
-				</li>
-				<li class="projects__list-item">
-					<Button
-							buttonStyle="secondary"
-							buttonSize="normal"
-							buttonText="Komercyjne"
-					></Button>
-				</li>
-				<li class="projects__list-item">
-					<Button
-							buttonStyle="secondary"
-							buttonSize="normal"
-							buttonText="Moje"
-					></Button>
-				</li>
-			</ul>
-		</nav>
-
 		<div class="projects__content">
-
-			<div class="projects__tile">
-				<img src="../../../../assets/images/projects/kancelaria.png" alt="">
-				<a href="" target="_blank">Sprawdź online</a>
-
-				<div class="projects__desc">
-					<h3>
-						Kancelaria Zawacka-Rdzen
-					</h3>
-				</div>
-			</div>
-
-			<div class="projects__tile">
-				<img src="../../../../assets/images/projects/drewno.png" alt="">
-				<a href="" target="_blank">Sprawdź online</a>
-
-				<div class="projects__desc">
-					<h3>
-						Stolarstwo PiekneDrewno - Daniel Kuczynski
-					</h3>
-				</div>
-			</div>
-
-			<div class="projects__tile">
-				<img src="../../../../assets/images/projects/fotopn.png" alt="">
-				<a href="" target="_blank">Sprawdź online</a>
-
-				<div class="projects__desc">
-					<h3>
-						Fotografia Patrycja Nizioł
-					</h3>
-				</div>
-			</div>
-
-			<div class="projects__tile">
-				<img src="../../../../assets/images/projects/gallery.png" alt="">
-				<a href="" target="_blank">Sprawdź online</a>
-
-				<div class="projects__desc">
-					<h3>
-						Galeria zdjęć
-					</h3>
-				</div>
-			</div>
-
-			<div class="projects__tile">
-				<img src="../../../../assets/images/projects/extemo.png" alt="">
-				<a href="" target="_blank">Sprawdź online</a>
-
-				<div class="projects__desc">
-					<h3>
-						Przykładowy template strony
-					</h3>
-				</div>
-			</div>
-
-			<div class="projects__tile">
-				<img src="../../../../assets/images/projects/login1.png" alt="">
-				<a href="" target="_blank">Sprawdź online</a>
-
-				<div class="projects__desc">
-					<h3>
-						Panel logowania/rejestracji
-					</h3>
-				</div>
-			</div>
-
-			<div class="projects__tile">
-				<img src="../../../../assets/images/projects/login2.png" alt="">
-				<a href="" target="_blank">Sprawdź online</a>
-
-				<div class="projects__desc">
-					<h3>
-						Panel logowania/rejestracji
-					</h3>
-				</div>
-			</div>
+			<ZawackaRdzen></ZawackaRdzen>
+			<PiekneDrewno></PiekneDrewno>
+			<FotografiaPN></FotografiaPN>
+			<Extemo></Extemo>
+			<Login1></Login1>
+			<Login2></Login2>
 		</div>
 
 		<div class="projects__placeholder1"></div>
@@ -114,13 +17,24 @@
 </template>
 
 <script>
+import ProjectItem from './ProjectItem'
+import ZawackaRdzen from "./libs/ZawackaRdzen";
+import PiekneDrewno from './libs/PiekneDrewno'
+import FotografiaPN from './libs/FotografiaPN'
+import Extemo from './libs/Extemo'
+import Login1 from './libs/Login1'
+import Login2 from './libs/Login2'
+
 export default {
-	data() {
-		return {
-			isActive: false,
-		}
+	components: {
+		ProjectItem,
+		ZawackaRdzen,
+		PiekneDrewno,
+		FotografiaPN,
+		Extemo,
+		Login1,
+		Login2,
 	},
-	methods: {}
 }
 </script>
 
