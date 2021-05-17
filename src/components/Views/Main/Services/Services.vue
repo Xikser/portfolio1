@@ -1,5 +1,5 @@
 <template functional>
-	<section class="services">
+	<section class="services" id="services">
 
 		<div class="placeholder-1">
 			<Button

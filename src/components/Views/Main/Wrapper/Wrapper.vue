@@ -1,5 +1,5 @@
 <template functional>
-	<section class="wrapper">
+	<section class="wrapper" id="contact">
 
 		<div class="wrapper__placeholder1"></div>
 

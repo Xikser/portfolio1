@@ -1,5 +1,5 @@
 <template functional>
-	<section class="projects">
+	<section class="projects" id="projects">
 
 		<h2 class="short">Projekty</h2>
 
