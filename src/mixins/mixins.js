@@ -50,8 +50,14 @@ export const prepareRouterLinks = {
 			this.globalRouterLinks.push({
 				name: route.name,
 				path: route.path,
+				hash: route.hash,
 			})
 		})
+	},
+	computed: {
+		navItems() {
+			return this.globalRouterLinks.slice(0, 5)
+		},
 	},
 	data() {
 		return {
@@ -91,7 +97,7 @@ export const footerVisibility = {
 			}, 200)
 		}).then(() => {
 			window.addEventListener('scroll', this.handleScroll)
-		} )
+		})
 	},
 	beforeUnmount() {
 		window.removeEventListener('scroll', this.handleScroll)
