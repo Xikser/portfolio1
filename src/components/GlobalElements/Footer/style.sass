@@ -1,36 +1,47 @@
 .footer
 	position: relative
 	width: 144em
-	min-height: 30vh
+	margin: 0 auto 100px
+	min-height: 40vh
+	background-image: url("../../../assets/images/wrapper.jpg")
+	background-attachment: fixed
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: 100vw 100vh
 	display: flex
-	margin: 0 auto 50px auto
-	padding: 50px 0
-	flex-direction: column
 	align-items: center
-	justify-content: center
-	background: $color--accent-gray
+	justify-content: flex-end
+
+	&__box
+		position: absolute
+		top: 30%
+		left: 50%
+		transform: translateX(-50%)
+		color: white
+
+		h2
+			font-weight: 300
+			text-align: center
+			font-size: 2.3rem
+			padding: 0 0 10px 0
+
+			span
+				font-weight: 500
+
+		a
+			border-bottom: 1px solid white
+			font-weight: 300
+			color: white
+			letter-spacing: 1.25px
+			font-size: 1.6rem
 
 	&__placeholder1
 		position: absolute
-		top: -50%
+		top: -30%
 		right: 0
 		width: 10px
 		height: 100%
 		background: $color--accent-gray
-
-	.short
-		position: absolute
-		top: 0
-		right: 30%
-		font-size: 2.6rem
-		font-family: $font--title
-		font-weight: 400
-		text-transform: uppercase
-		background: white
-		width: 30%
-		text-align: center
-		line-height: 50px
-		cursor: default
 
 	h3
 		cursor: default
@@ -47,12 +58,20 @@
 		letter-spacing: 1.5px
 
 	&__content
-		padding: 50px 0
-		width: 30%
+		position: relative
 		display: flex
 		flex-direction: row
+		justify-content: space-evenly
 		align-items: center
-		justify-content: space-between
+		background: $color--accent-gray
+		height: 40vh
+		width: 30%
+
+	&__tile-container
+		width: 100%
+		padding-top: 100px
+		display: flex
+		justify-content: space-evenly
 
 	&__tile
 		transition: all .3s ease

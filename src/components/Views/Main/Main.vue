@@ -6,7 +6,6 @@
 		<Projects></Projects>
 		<Pricing></Pricing>
 		<Clients></Clients>
-		<Wrapper></Wrapper>
 	</main>
 </template>
 
@@ -17,10 +16,9 @@ import About from "./About/About";
 import Pricing from './Pricing/Pricing'
 import Clients from "./Clients/Clients";
 import Projects from "./Projects/Projects";
-import Wrapper from "./Wrapper/Wrapper";
 
 export default {
 	name: 'Main',
-	components: {Wrapper, Projects, Clients, About, Services, Header, Pricing}
+	components: {Projects, Clients, About, Services, Header, Pricing}
 }
 </script>

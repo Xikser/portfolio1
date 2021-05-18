@@ -38,14 +38,10 @@ const scrollBehavior = (to, from, savedPosition) => {
     setTimeout(() => {
       const element = document.getElementById(to.hash.replace(/#/, ''))
       if (element && element.scrollIntoView) {
-        element.scrollIntoView({block: 'end', behavior: 'smooth'})
+        element.scrollIntoView({block: 'start', behavior: 'smooth'})
       }
     }, 500)
 
-    //NOTE: This doesn't work for Vue 3
-    //return {selector: to.hash}
-
-    //This does
     return {el: to.hash};
   }
   else if (savedPosition) {
