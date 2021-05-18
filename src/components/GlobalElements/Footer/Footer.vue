@@ -37,8 +37,18 @@
 					</a>
 				</div>
 
+				<div class="footer__tile phone">
+					<a href="#" target="_blank">
+						<i class="fas fa-phone"></i>
+					</a>
+
+					<span>
+						666 616 882
+					</span>
+				</div>
+
 				<div class="footer__tile">
-					<a href="" target="_blank">
+					<a href="mailto:daniel.wyskup@gmail.com" target="_blank">
 						<i class="fas fa-envelope"></i>
 					</a>
 				</div>
