@@ -1,0 +1,91 @@
+$aos-distance: 100px !default
+
+[data-aos^='draw'][data-aos^='draw']
+	transition-property: opacity, width
+
+[data-aos='draw-project']
+	width: 0
+
+	&.aos-animate
+		opacity: 1
+		width: 45%
+
+[data-aos='draw-about-placeholder1']
+
+	&::before
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: white
+		visibility: visible
+		transition: all 1.5s ease
+
+	&.aos-animate
+		opacity: 1
+
+		&::before
+			width: 0
+			visibility: hidden
+
+[data-aos='draw-about-placeholder2']
+
+	&::before
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: white
+		transition: all 1.5s ease
+		transition-delay: 1.25s
+
+	&.aos-animate
+
+		&::before
+			width: 0
+
+
+[data-aos='draw-about-placeholder3']
+	transition-duration: 2s !important
+
+	&.aos-animate
+		transition: all 2s ease
+		transition-delay: 2.5s
+		height: 100%
+
+
+[data-aos='draw-services']
+
+	&::before
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: white
+		z-index: 1
+		transition: all 2s ease
+		transition-delay: 3.5s
+
+	&.aos-animate
+
+		&::before
+			left: 100%
+			visibility: hidden
+
+
+[data-aos^='fade'][data-aos^='fade']
+	opacity: 0
+	transition-property: opacity, transform
+
+	&.aos-animate
+		opacity: 1
+		transform: translate3d(0, 0, 0)
+
+[data-aos='fade-right']
+	transform: translate3d(-$aos-distance, 0, 0)

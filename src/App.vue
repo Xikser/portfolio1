@@ -4,21 +4,23 @@
 	<Footer></Footer>
 </template>
 <script>
-
 import Main from "./components/Views/Main/Main";
 export default {
 	name: 'App',
 	components: {Main},
+	mounted() {
+		AOS.init()
+	},
 	data() {
 		return {
 			Component: 'Main',
 		}
 	},
-	mounted() {}
 }
 </script>
 <style lang="sass">
 @import './assets/sass/variables'
+@import './assets/sass/animations'
 
 html
 	font-size: 10px

@@ -17,17 +17,24 @@
 				</p>
 
 				<Button
-					buttonStyle='primary'
-					buttonSize="normal"
-					buttonText="Więcej"
-					:additionalElement="true"
+						buttonStyle='primary'
+						buttonSize="normal"
+						buttonText="Więcej"
+						:additionalElement="true"
 				>
 				</Button>
 
-				<div class="main-about__heading--placeholder"></div>
+				<div
+						class="main-about__heading--placeholder"
+						data-aos="draw-about-placeholder2"
+				></div>
+				<div
+						class="main-about__heading--placeholder3"
+						data-aos="draw-about-placeholder3"
+				></div>
 			</div>
 
-			<div class="placeholder-1"></div>
+			<div class="placeholder-1" data-aos="draw-about-placeholder1"></div>
 		</div>
 
 	</section>

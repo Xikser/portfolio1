@@ -1,10 +1,27 @@
+@for $i from 1 to 10
+	.projects__tile:nth-child(#{$i})
+		transition-delay: $i * 0.4s
+
 .projects
 
 	&__tile
 		position: relative
 		width: 45%
-		margin: 15px 0
 		overflow: hidden
+		max-height: 27em
+
+		&:nth-of-type(1)
+			margin: 15px 50px 15px 0
+		&:nth-of-type(2)
+			margin: 15px 0 15px 0
+		&:nth-of-type(3)
+			margin: 15px 50px 15px 0
+		&:nth-of-type(4)
+			margin: 15px 0 15px 0
+		&:nth-of-type(5)
+			margin: 15px 50px 15px 0
+		&:nth-of-type(6)
+			margin: 15px 0 15px 0
 
 		img
 			width: 100%

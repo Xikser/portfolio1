@@ -4,12 +4,12 @@
 		<h2 class="short">Projekty</h2>
 
 		<div class="projects__content">
-			<ZawackaRdzen></ZawackaRdzen>
-			<PiekneDrewno></PiekneDrewno>
-			<FotografiaPN></FotografiaPN>
-			<Extemo></Extemo>
-			<Login1></Login1>
-			<Login2></Login2>
+			<ZawackaRdzen data-aos="draw-project"></ZawackaRdzen>
+			<PiekneDrewno data-aos="draw-project"></PiekneDrewno>
+			<FotografiaPN data-aos="draw-project"></FotografiaPN>
+			<Extemo data-aos="draw-project"></Extemo>
+			<Login1 data-aos="draw-project"></Login1>
+			<Login2 data-aos="draw-project"></Login2>
 		</div>
 
 		<div class="projects__placeholder1"></div>

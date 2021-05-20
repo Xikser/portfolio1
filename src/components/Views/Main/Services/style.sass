@@ -1,6 +1,7 @@
 .services
 	position: relative
 	min-height: 50vh
+	margin-top: 250px
 	padding: 100px 0 100px
 	background: $color--accent-gray
 	color: $color--light
@@ -68,3 +69,6 @@
 				line-height: 23px
 				font-family: $font--primary
 
+@for $i from 1 to 10
+	.services__tile:nth-child(#{$i})
+		transition-delay: $i * 0.3s

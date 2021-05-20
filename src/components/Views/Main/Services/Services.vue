@@ -1,5 +1,5 @@
 <template functional>
-	<section class="services" id="services">
+	<section class="services" id="services" data-aos='draw-services'>
 
 		<div class="placeholder-1">
 			<Button
@@ -17,6 +17,7 @@
 
 			<div
 					class="services__tile"
+					data-aos="fade-right"
 					v-for="(item, index) in items"
 					:key="index"
 			>
