@@ -15,4 +15,3 @@ createApp(App)
     .component('Footer', Footer)
 	.use(router)
 	.mount('body')
-
