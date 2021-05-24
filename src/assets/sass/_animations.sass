@@ -1,16 +1,14 @@
-$aos-distance: 100px !default
-
-[data-aos^='draw'][data-aos^='draw']
+[data-anim^='draw'][data-anim^='draw']
 	transition-property: opacity, width
 
-[data-aos='draw-project']
+[data-anim='draw-project']
 	width: 0
 
-	&.aos-animate
+	&.elem-animate
 		opacity: 1
 		width: 45%
 
-[data-aos='draw-about-placeholder1']
+[data-anim='draw-about-placeholder1']
 
 	&::before
 		position: absolute
@@ -23,14 +21,14 @@ $aos-distance: 100px !default
 		visibility: visible
 		transition: all 1.5s ease
 
-	&.aos-animate
+	&.elem-animate
 		opacity: 1
 
 		&::before
 			width: 0
 			visibility: hidden
 
-[data-aos='draw-about-placeholder2']
+[data-anim='draw-about-placeholder2']
 
 	&::before
 		position: absolute
@@ -43,22 +41,21 @@ $aos-distance: 100px !default
 		transition: all 1.5s ease
 		transition-delay: 1.25s
 
-	&.aos-animate
+	&.elem-animate
 
 		&::before
 			width: 0
 
 
-[data-aos='draw-about-placeholder3']
-	transition-duration: 2s !important
+[data-anim='draw-about-placeholder3']
 
-	&.aos-animate
+	&.elem-animate
 		transition: all 2s ease
-		transition-delay: 2.5s
-		height: 100%
+		transition-delay: 3s
+		height: 270%
 
 
-[data-aos='draw-services']
+[data-anim='draw-services']
 
 	&::before
 		position: absolute
@@ -72,7 +69,7 @@ $aos-distance: 100px !default
 		transition: all 2s ease
 		transition-delay: 3.5s
 
-	&.aos-animate
+	&.elem-animate
 
 		&::before
 			left: 100%
@@ -83,9 +80,6 @@ $aos-distance: 100px !default
 	opacity: 0
 	transition-property: opacity, transform
 
-	&.aos-animate
+	&.elem-animate
 		opacity: 1
 		transform: translate3d(0, 0, 0)
-
-[data-aos='fade-right']
-	transform: translate3d(-$aos-distance, 0, 0)
