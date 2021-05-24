@@ -5,11 +5,14 @@
 </template>
 <script>
 import Main from "./components/Views/Main/Main";
+import {animation} from './animations/main'
+
 export default {
 	name: 'App',
 	components: {Main},
 	mounted() {
 		AOS.init()
+		animation.init()
 	},
 	data() {
 		return {
