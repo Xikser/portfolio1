@@ -24,11 +24,10 @@ button[buttonStyle=primary]
 	color: $color--dark
 	text-transform: uppercase
 	letter-spacing: 1.25px
-	padding: 0
 
 	span
 		position: relative
-		width: 100px
+		min-width: 100px
 		height: 40px
 		transition: transform .3s
 		background: white
@@ -70,14 +69,14 @@ button[buttonStyle=primary]
 		transform: translateY(100%)
 
 
-
 button[buttonStyle=secondary]
 	color: $color--accent-gray
 	background: white
 	text-transform: uppercase
 	font-weight: 500
-	padding: 10px 25px
-	margin-right: 10px
+	font-size: 1.2rem !important
+	padding: 10px 15px
+	//margin-right: 10px
 	border: 2px solid $color--accent-gray
 
 .is-active
