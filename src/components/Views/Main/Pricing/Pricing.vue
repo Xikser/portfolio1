@@ -1,20 +1,12 @@
 <template functional>
 	<section class="pricing">
 
-		<div class="pricing__placeholder1"></div>
-
-		<h2 class="short">Cennik</h2>
-
 		<div class="pricing__content">
 			<div class="pricing__tile">
 				<div class="pricing__tile-header">
 					<h3>
 						Strony internetowe
 					</h3>
-
-					<p>
-						od 20 zł/godzina
-					</p>
 				</div>
 
 				<div class="pricing__tile-content">
@@ -46,10 +38,6 @@
 					<h3>
 						Usługi hostingowe
 					</h3>
-
-					<p>
-						od 50 zł/godzina
-					</p>
 				</div>
 
 				<div class="pricing__tile-content">
@@ -78,13 +66,11 @@
 							Migracja usług na inny hosting
 						</li>
 
-						<li class="pricing__item">
-							Wsparcie techniczne*
-						</li>
-
 					</ul>
 				</div>
 			</div>
+
+			<div class="placeholder-1"></div>
 
 		</div>
 	</section>
