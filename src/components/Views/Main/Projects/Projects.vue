@@ -1,7 +1,9 @@
 <template functional>
-	<section class="projects" id="projects">
+	<section class="projects">
 
-		<h2 class="short">Projekty</h2>
+		<h2 class="short" id="projects">Projekty</h2>
+
+		<ProjectNavbar></ProjectNavbar>
 
 		<div class="projects__content">
 			<ZawackaRdzen data-aos="draw-project"></ZawackaRdzen>
@@ -12,7 +14,8 @@
 			<Login2 data-aos="draw-project"></Login2>
 		</div>
 
-		<div class="projects__placeholder1"></div>
+<!--		<div class="projects__placeholder1"></div>-->
+
 	</section>
 </template>
 
@@ -25,6 +28,8 @@ import Extemo from './libs/Extemo'
 import Login1 from './libs/Login1'
 import Login2 from './libs/Login2'
 
+import ProjectNavbar from './ProjectNavbar'
+
 export default {
 	components: {
 		ProjectItem,
@@ -34,6 +39,7 @@ export default {
 		Extemo,
 		Login1,
 		Login2,
+		ProjectNavbar,
 	},
 }
 </script>
