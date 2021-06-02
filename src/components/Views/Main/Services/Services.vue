@@ -1,15 +1,7 @@
 <template functional>
 	<section class="services" id="services" data-aos='draw-services'>
 
-		<div class="placeholder-1">
-			<Button
-					buttonStyle="primary"
-					buttonSize="normal"
-					buttonText="więcej"
-					:additionalElement="true"
-					@click="scrollTo"
-			></Button>
-		</div>
+		<div class="placeholder-1"></div>
 
 		<h2 class="short">Moje usługi</h2>
 
