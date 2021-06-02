@@ -3,8 +3,8 @@
 	<main class="main">
 		<About></About>
 		<Services></Services>
-		<Projects></Projects>
 		<Pricing></Pricing>
+		<Projects></Projects>
 		<Clients></Clients>
 	</main>
 </template>
