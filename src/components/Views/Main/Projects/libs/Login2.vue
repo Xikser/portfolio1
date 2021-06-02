@@ -5,7 +5,7 @@
 		</template>
 
 		<template #link>
-			<a href="" target="_blank">Sprawdź online</a>
+			<a class="projects__link" href="" target="_blank">Podgląd projektu</a>
 		</template>
 
 		<template #title>
