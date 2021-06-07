@@ -1,7 +1,7 @@
 <template>
 	<ProjectItem>
 		<template #image>
-			<img src="../../../../../assets/images/projects/login1.png" alt="">
+			<img class="projects__image" src="../../../../../../assets/images/projects/kancelaria.png" alt="">
 		</template>
 
 		<template #link>
@@ -10,13 +10,13 @@
 
 		<template #title>
 			<h3>
-				Panel logowania/rejestracji
+				Kancelaria Zawacka-Rdzen
 			</h3>
 		</template>
 	</ProjectItem>
 </template>
 <script>
-import ProjectItem from "../ProjectItem";
+import ProjectItem from "../../ProjectItem";
 export default {
 	components: {ProjectItem}
 }

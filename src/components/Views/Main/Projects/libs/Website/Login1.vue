@@ -1,7 +1,7 @@
 <template>
 	<ProjectItem>
 		<template #image>
-			<img src="../../../../../assets/images/projects/fotopn.png" alt="">
+			<img src="../../../../../../assets/images/projects/login1.png" alt="">
 		</template>
 
 		<template #link>
@@ -10,13 +10,13 @@
 
 		<template #title>
 			<h3>
-				Fotografia Patrycja Nizioł
+				Panel logowania/rejestracji
 			</h3>
 		</template>
 	</ProjectItem>
 </template>
 <script>
-import ProjectItem from "../ProjectItem";
+import ProjectItem from "../../ProjectItem";
 export default {
 	components: {ProjectItem}
 }

@@ -1,7 +1,7 @@
 <template>
 	<ProjectItem>
 		<template #image>
-			<img src="../../../../../assets/images/projects/drewno.png" alt="">
+			<img class="projects__image" src="../../../../../../assets/images/projects/extemo.png" alt="">
 		</template>
 
 		<template #link>
@@ -10,13 +10,13 @@
 
 		<template #title>
 			<h3>
-				Stolarstwo PiekneDrewno - Daniel Kuczyński
+				Przykładowy template strony
 			</h3>
 		</template>
 	</ProjectItem>
 </template>
 <script>
-import ProjectItem from "../ProjectItem";
+import ProjectItem from "../../ProjectItem";
 export default {
 	components: {ProjectItem}
 }
