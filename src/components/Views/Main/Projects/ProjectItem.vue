@@ -11,5 +11,5 @@
 
 <style lang="sass">
 @import './src/assets/sass/variables'
-@import 'item-style'
+@import 'styles/item-style'
 </style>
