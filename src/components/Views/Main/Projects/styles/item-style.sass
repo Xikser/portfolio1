@@ -3,6 +3,7 @@
 		transition-delay: $i * 0.4s
 
 .projects
+	transition: all .4s ease
 
 	&__tile
 		position: relative
@@ -10,9 +11,6 @@
 		min-height: 20vh
 		margin: 0 0 50px 0
 		overflow: hidden
-
-		img
-			width: 100%
 
 		&::before,
 		&::after
@@ -45,10 +43,13 @@
 		&:hover .projects__desc
 			opacity: 1
 
-	a
+	&__link
 		position: absolute
 		top: -50%
 		left: 50%
+		display: block
+		width: 100%
+		text-align: center
 		transform: translate(-50%, -50%) scale(0)
 		transition: all .3s ease
 		transition-delay: .2s
@@ -76,3 +77,21 @@
 			font-weight: 300
 			letter-spacing: 1.5px
 			color: white
+
+
+.projects__website > .projects__tile > img
+	width: 100%
+
+.projects__design > .projects__tile
+	width: 15%
+	min-height: 10vh
+
+.projects__design > .projects__tile > img
+	width: 100%
+
+.projects__design > .projects__tile > .projects__link
+	cursor: pointer
+
+@for $i from 1 to 10
+	.projects__tile:nth-child(#{$i})
+		transition-delay: $i * 0.3s
