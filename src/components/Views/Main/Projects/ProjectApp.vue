@@ -19,10 +19,7 @@
 				</div>
 
 				<div key="2" class="projects__box projects__design" v-show="projectType === 'design'">
-					<Telebarek></Telebarek>
-					<Telebarek></Telebarek>
-					<Telebarek></Telebarek>
-					<Telebarek></Telebarek>
+					<Telebarek @clicked="handleEvent"></Telebarek>
 				</div>
 
 				<div key="3" class="projects__hosting" v-show="projectType === 'hosting'">
@@ -33,12 +30,22 @@
 			</transition-group>
 
 		</div>
+
+		<transition name="viewer">
+			<ProjectViewer
+					v-if="status" :item="item"
+					:projectID="projectID"
+					@offViewer="status = !status"
+			>
+			</ProjectViewer>
+		</transition>
 	</section>
 </template>
 
 <script>
 import ProjectItem from './ProjectItem'
 import ProjectNavbar from './ProjectNavbar'
+import ProjectViewer from "@/components/Views/Main/Projects/Viewer/ProjectViewer";
 
 import ZawackaRdzen from "./libs/Website/ZawackaRdzen";
 import PiekneDrewno from './libs/Website/PiekneDrewno'
@@ -53,6 +60,7 @@ export default {
 	components: {
 		ProjectItem,
 		ProjectNavbar,
+		ProjectViewer,
 		ZawackaRdzen,
 		PiekneDrewno,
 		FotografiaPN,
@@ -63,10 +71,18 @@ export default {
 	},
 	data() {
 		return {
+			item: Object,
+			projectID: '',
 			projectType: 'website',
+			status: false,
 		}
 	},
 	methods: {
+		handleEvent(item, projectID) {
+			this.status = !this.status
+			this.projectID = projectID
+			this.item = item
+		},
 		changeProjectType(type) {
 			this.projectType = type
 		}
@@ -85,6 +101,18 @@ export default {
 
 .project-enter-to
 	transition-delay: .3s
+	opacity: 1
+
+//viewer
+.viewer-enter-active, .viewer-leave-active
+	transition: all .5s ease
+	opacity: 0
+	//position: absolute !important
+
+.viewer-enter, .viewer-leave-to
+	opacity: 0
+
+.viewer-enter-to
 	opacity: 1
 </style>
 
