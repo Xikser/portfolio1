@@ -1,11 +1,11 @@
 <template>
 	<ProjectItem>
 		<template #image>
-			<img class="projects__image" src="../../../../../../assets/images/projects/kancelaria.png" alt="">
+			<img class="projects__image" src="../../../../../../assets/images/projects/website/kancelaria.png" alt="">
 		</template>
 
 		<template #link>
-			<a class="projects__link" href="" target="_blank">Podgląd projektu</a>
+			<a href="" target="_blank" class="projects__link">Podgląd projektu</a>
 		</template>
 
 		<template #title>
@@ -18,6 +18,13 @@
 <script>
 import ProjectItem from "../../ProjectItem";
 export default {
-	components: {ProjectItem}
+	components: {ProjectItem},
+	methods: {
+		handleClick(elem) {
+			const item = elem.target.offsetParent
+
+			console.log(item)
+		}
+	}
 }
 </script>

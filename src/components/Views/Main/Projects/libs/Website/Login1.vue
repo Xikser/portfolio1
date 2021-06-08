@@ -1,7 +1,7 @@
 <template>
 	<ProjectItem>
 		<template #image>
-			<img src="../../../../../../assets/images/projects/login1.png" alt="">
+			<img src="../../../../../../assets/images/projects/website/login1.png" alt="">
 		</template>
 
 		<template #link>
