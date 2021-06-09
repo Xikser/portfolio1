@@ -92,6 +92,36 @@
 .projects__design > .projects__tile > .projects__link
 	cursor: pointer
 
+.projects__hosting
+	justify-content: flex-start !important
+
+.projects__hosting > .projects__tile
+	width: 25%
+	min-height: 10vh
+	align-items: center
+	justify-content: center
+	text-align: center
+	flex-direction: column
+	display: flex
+	cursor: pointer
+
+	&::before, &::after
+		display: none
+
+.projects__hosting > .projects__tile > h2
+	color: white
+	font-size: 2rem
+	line-height: 50px
+	text-align: center
+	font-weight: 400
+	font-family: $font--primary
+	letter-spacing: 1.2px
+	cursor: default
+
+.projects__hosting > .projects__tile > img
+	width: 50%
+	line-height: 50px
+
 @for $i from 1 to 10
 	.projects__tile:nth-child(#{$i})
 		transition-delay: $i * 0.3s

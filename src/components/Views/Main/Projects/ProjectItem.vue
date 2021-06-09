@@ -12,4 +12,5 @@
 <style lang="sass">
 @import './src/assets/sass/variables'
 @import 'styles/item-style'
+@import 'styles/hosting'
 </style>
