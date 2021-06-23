@@ -12,5 +12,4 @@ animation.init = () => {
 		})
 	}, false)
 }
-0
 export {animation}
