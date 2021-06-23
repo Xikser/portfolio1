@@ -1,5 +1,5 @@
 <template functional>
-	<section class="projects">
+	<section class="projects" data-anim='draw-services'>
 
 		<h2 class="short" id="projects">Projekty</h2>
 

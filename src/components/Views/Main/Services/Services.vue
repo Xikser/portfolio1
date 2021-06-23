@@ -1,5 +1,5 @@
 <template functional>
-	<section class="services" id="services" data-aos='draw-services'>
+	<section class="services" id="services" data-anim='draw-right'>
 
 		<div class="placeholder-1"></div>
 

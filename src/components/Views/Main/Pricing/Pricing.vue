@@ -1,8 +1,8 @@
 <template functional>
-	<section class="pricing">
+	<section class="pricing" data-anim='draw-bottom'>
 
 		<div class="pricing__content">
-			<div class="pricing__tile">
+			<div class="pricing__tile" data-anim='draw-top'>
 				<div class="pricing__tile-header">
 					<h3>
 						Strony internetowe
@@ -33,7 +33,7 @@
 				</div>
 			</div>
 
-			<div class="pricing__tile">
+			<div class="pricing__tile" data-anim='draw-top'>
 				<div class="pricing__tile-header">
 					<h3>
 						Usługi hostingowe
