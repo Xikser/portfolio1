@@ -5,25 +5,35 @@ const handleIntersect = (entry) => {
 
 	const ratio = entry[0].intersectionRatio;
 	const boundingRect = entry[0].boundingClientRect;
-	const intersectionRect = entry[0].intersectionRect;
+	const intersectionRect = entry[0].intersectionRect; // .top - always 0
 
-	if (ratio < 1) {
-		if (boundingRect.top < intersectionRect.top) {
-			//top screen
-		} else {
-			//bottom screen
-			// if(element.classList.contains('elem-animate')) {
-			// 	console.log('remove')
-			// 	removeAnimation(element)
-			// }
-		}
+	if(element.isIntersecting) {
+		console.log(element)
 	}
-	else {
-		console.log('add')
-		addAnimation(element)
-		//center screen
-		// element.style.background = 'yellow'
-	}
+
+
+
+
+	// if (ratio < 1) {
+	// 	if (boundingRect.top < intersectionRect.top) {
+	// 		//top screen
+	// 	} else {
+	// 		//bottom screen
+	//
+	// 		// if(element.classList.contains('elem-animate')) {
+	// 		// 	removeAnimation(element)
+	// 		// }
+	// 	}
+	// }
+	// else {
+	// 	//center screen
+	// 	// console.log(entry)
+	// 	addAnimation(element)
+	//
+	// 	if(element.classList.contains('services'))
+	// 		console.log(element)
+	// 	// element.style.background = 'yellow'
+	// }
 }
 
 export {handleIntersect}

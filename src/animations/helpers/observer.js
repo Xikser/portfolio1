@@ -1,15 +1,22 @@
 import {handleIntersect} from "@/animations/helpers/intersect";
 
 const createObserver = (element) => {
-	let observer
+	// let observer
 	let options = {
 		root: null,
-		rootMargin: '0px',
-		threshold: [...Array(100).keys()].map(x => x / 100),
+		rootMargin: '4px',
+		threshold: .5,
 	}
 
-	observer = new IntersectionObserver(handleIntersect, options)
-	observer.observe(element)
+	// observer = new IntersectionObserver(handleIntersect, options)
+	// observer.observe(element)
+	// console.log(element)
+
+	let observer = new IntersectionObserver((handleIntersect, observer) => {
+
+	})
+	// observer.observe(element)
+	console.log(observer)
 }
 
 export {createObserver}
