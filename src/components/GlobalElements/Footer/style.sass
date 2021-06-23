@@ -13,10 +13,6 @@
 	justify-content: flex-end
 
 	&__box
-		position: absolute
-		top: 30%
-		left: 50%
-		transform: translateX(-50%)
 		color: white
 
 		h2
@@ -60,7 +56,7 @@
 	&__content
 		position: relative
 		display: flex
-		flex-direction: row
+		flex-direction: column
 		justify-content: space-evenly
 		align-items: center
 		background: $color--accent-gray
@@ -69,7 +65,6 @@
 
 	&__tile-container
 		width: 100%
-		padding-top: 100px
 		display: flex
 		justify-content: space-evenly
 
@@ -88,6 +83,36 @@
 			i
 				color: white
 
+	&__brief
+		position: relative
+		text-align: center
+		color: white
+
+		a
+			font-size: 1.6rem
+			font-weight: 300
+			color: gray
+			border-bottom: 1px solid gray
+			cursor: pointer
+
+		&:hover
+			visibility: hidden
+
+		&:hover .tooltip
+			visibility: visible
+
+		.tooltip
+			position: absolute
+			width: 250px
+			top: 0
+			left: 0
+			color: white
+			font-size: 1.3rem
+			font-weight: 300
+			letter-spacing: 2px
+			visibility: hidden
+			cursor: default
+			text-align: left
 
 .phone
 	position: relative

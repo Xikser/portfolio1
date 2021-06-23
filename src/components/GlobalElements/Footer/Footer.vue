@@ -54,6 +54,14 @@
 				</div>
 
 			</div>
+
+			<div class="footer__brief">
+				<a>Lub wypełnij brief ONLINE!</a>
+
+				<div class="tooltip">
+					<span>Chwilowo niedostępne!</span>
+				</div>
+			</div>
 		</div>
 
 		<h3>Wszelkie prawa zastrzeżone &copy | 2021</h3>
@@ -63,5 +71,4 @@
 <style lang="sass" scoped>
 @import './src/assets/sass/variables'
 @import 'style.sass'
-@import 'wrapper-style'
 </style>
