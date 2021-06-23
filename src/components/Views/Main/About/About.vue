@@ -26,15 +26,15 @@
 
 				<div
 						class="main-about__heading--placeholder"
-						data-anim="draw-about-placeholder2"
+						data-anim="draw-left"
 				></div>
 				<div
 						class="main-about__heading--placeholder3"
-						data-anim="draw-about-placeholder3"
+						data-anim="draw-bottom"
 				></div>
 			</div>
 
-			<div class="placeholder-1" data-anim="draw-about-placeholder1"></div>
+			<div class="placeholder-1" data-anim="draw-left"></div>
 		</div>
 
 	</section>
