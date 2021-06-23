@@ -1,14 +1,15 @@
 <template functional>
-	<section class="clients">
+	<section class="clients" >
 
-		<h2 class="short">Zaufali mi</h2>
-		<div class="clients__placeholder1"></div>
+		<h2 class="short" data-anim='draw-left'>Zaufali mi</h2>
+		<div class="clients__placeholder1" data-anim='draw-bottom'></div>
 
-		<div class="clients__content">
+		<div class="clients__content" data-anim='draw-bottom'>
 			<div
 					v-for="(item, index) in items"
 					:key="index"
 					class="clients__tile"
+					data-aos="fade-right"
 			>
 				<img :src="item.src" :alt="item.alt">
 
@@ -16,7 +17,7 @@
 			</div>
 		</div>
 
-		<div class="clients__placeholder2"></div>
+		<div class="clients__placeholder2" data-anim='draw-right'></div>
 	</section>
 </template>
 

@@ -1,8 +1,8 @@
 <template functional>
-	<footer class="footer" id="contact">
-		<div class="footer__placeholder1"></div>
+	<footer class="footer" id="contact" data-anim='draw-left'>
+		<div class="footer__placeholder1" data-anim='draw-bottom'></div>
 
-		<div class="footer__content">
+		<div class="footer__content" data-anim='draw-right'>
 
 			<div class="footer__box">
 				<h2>Masz

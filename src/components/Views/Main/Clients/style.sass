@@ -54,3 +54,7 @@
 			cursor: default
 			font-size: 2rem
 			font-weight: 400
+
+@for $i from 1 to 10
+	.clients__tile:nth-child(#{$i})
+		transition-delay: $i * 0.3s
