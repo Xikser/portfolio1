@@ -11,7 +11,7 @@ const routes = [
 		path: '/',
 		name: 'O mnie',
 		hash: '#main-about',
-		component: () => import('../components/Views/About/About')
+		component: () => import('../components/Views/Main/Main')
 	},
 	{
 		path: '/',
