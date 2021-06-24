@@ -2,6 +2,9 @@
 	<section class="sub-service" data-anim='draw-bottom'>
 
 		<div class="sub-service__content">
+
+			<div class="sub-service__tile-image"></div>
+
 			<div class="sub-service__tile" data-anim='draw-top'>
 				<div class="sub-service__tile-header">
 					<h3>
@@ -69,8 +72,6 @@
 					</ul>
 				</div>
 			</div>
-
-			<div class="placeholder-1"></div>
 
 		</div>
 	</section>
