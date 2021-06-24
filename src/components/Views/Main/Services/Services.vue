@@ -3,7 +3,7 @@
 
 		<div class="placeholder-1"></div>
 
-		<h2 class="short">Moje usługi</h2>
+		<h2 class="short" data-anim='draw-left'>Moje usługi</h2>
 
 		<div class="services__content">
 
