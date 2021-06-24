@@ -1,0 +1,127 @@
+@for $i from 1 to 10
+	.projects__tile:nth-child(#{$i})
+		transition-delay: $i * 0.4s
+
+.projects
+	transition: all .4s ease
+
+	&__tile
+		position: relative
+		width: 30%
+		min-height: 20vh
+		margin: 0 0 50px 0
+		overflow: hidden
+
+		&::before,
+		&::after
+			position: absolute
+			background: $color--accent-gray
+			width: 100%
+			height: 51%
+			transition: all .3s ease
+
+		&::before
+			content: ''
+			top: 0
+			left: -100%
+
+		&::after
+			content: ''
+			bottom: 0
+			right: -100%
+
+		&:hover::before
+			left: 0
+
+		&:hover::after
+			right: 0
+
+		&:hover .projects__link
+			top: 50%
+			transform: translate(-50%, -50%) scale(1)
+
+		&:hover .projects__desc
+			opacity: 1
+
+	&__link
+		position: absolute
+		top: -50%
+		left: 50%
+		display: block
+		width: 100%
+		text-align: center
+		transform: translate(-50%, -50%) scale(0)
+		transition: all .3s ease
+		transition-delay: .2s
+		color: white
+		font-size: 1.4rem
+		font-family: $font--title
+		text-transform: uppercase
+		z-index: 2
+
+		&:hover
+			text-decoration: underline
+
+	&__desc
+		position: relative
+		transition: all .3s ease
+		transition-delay: .2s
+		opacity: 0
+		z-index: 3
+		padding: 0 0 10px 10px
+		cursor: default
+
+		h3
+			font-size: 1.7rem
+			font-family: $font--title
+			font-weight: 300
+			letter-spacing: 1.5px
+			color: white
+
+
+.projects__website > .projects__tile > img
+	width: 100%
+
+.projects__design > .projects__tile
+	width: 15%
+	min-height: 10vh
+
+.projects__design > .projects__tile > img
+	width: 100%
+
+.projects__design > .projects__tile > .projects__link
+	cursor: pointer
+
+.projects__hosting
+	justify-content: flex-start !important
+
+.projects__hosting > .projects__tile
+	width: 25%
+	min-height: 10vh
+	align-items: center
+	justify-content: center
+	text-align: center
+	flex-direction: column
+	display: flex
+	cursor: pointer
+
+	&::before, &::after
+		display: none
+
+.projects__hosting > .projects__tile > h2
+	color: white
+	font-size: 2rem
+	line-height: 50px
+	text-align: center
+	font-weight: 400
+	font-family: $font--primary
+	letter-spacing: 1.2px
+	cursor: default
+
+.projects__hosting > .projects__tile > img
+	width: 50%
+	line-height: 50px
+
+@for $i from 1 to 10
+	.projects__tile:nth-child(#{$i})
+		transition-delay: $i * 0.3s

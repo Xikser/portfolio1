@@ -1,0 +1,33 @@
+.viewer
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	min-height: 100vh
+	background: rgba(0, 0, 0, 0.9)
+	z-index: 10000
+	overflow: hidden scroll
+
+	&__image
+		position: absolute
+		padding: 100px 20px
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 45%
+		border-left: 1px solid rgba(255, 255, 255, .3)
+		border-right: 1px solid rgba(255, 255, 255, .3)
+
+.fa-times
+	position: absolute
+	top: 10%
+	left: 75%
+	z-index: 10001
+	font-size: 2.5rem
+	color: white
+	cursor: pointer
+	transition: all .3s ease
+
+	&:hover
+		color: $color--accent
+		transform: scale(1.15)
