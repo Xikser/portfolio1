@@ -3,7 +3,8 @@
 	<main class="main">
 		<About></About>
 		<Services></Services>
-		<Pricing></Pricing>
+		<SubService></SubService>
+		<ImagePlaceholder></ImagePlaceholder>
 		<Projects></Projects>
 		<Clients></Clients>
 	</main>
@@ -13,12 +14,13 @@
 import Header from './Header/Header'
 import Services from "./Services/Services";
 import About from "./About/About";
-import Pricing from './SubService/SubService'
+import SubService from './SubService/SubService'
+import ImagePlaceholder from './ImagePlaceholder/ImagePlaceholder'
 import Clients from "./Clients/Clients";
 import Projects from "./Projects/ProjectApp";
 
 export default {
 	name: 'Main',
-	components: {Projects, Clients, About, Services, Header, Pricing}
+	components: {Projects, Clients, About, Services, ImagePlaceholder, Header, SubService}
 }
 </script>
