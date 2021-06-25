@@ -66,10 +66,15 @@
 	&__tile-container
 		width: 100%
 		display: flex
-		justify-content: space-evenly
+		justify-content: center
+		align-items: center
 
 	&__tile
+		position: relative
+		margin: 0 30px
 		transition: all .3s ease
+		display: flex
+		flex-direction: column
 
 		a
 			width: 100%
@@ -82,6 +87,21 @@
 
 			i
 				color: white
+
+		span
+			position: absolute
+			min-width: 220px
+			color: white
+			bottom: -120%
+			left: -320%
+			font-size: 1.4rem
+			letter-spacing: 2px
+			display: none
+			cursor: default
+			text-align: center
+
+		&:hover span
+			display: block
 
 	&__brief
 		position: relative
@@ -117,19 +137,4 @@
 .phone
 	position: relative
 
-	span
-		position: absolute
-		width: 150px
-		bottom: -200%
-		padding: 10px 0
-		border-bottom: 1px solid white
-		left: -200%
-		color: white
-		font-size: 1.8rem
-		letter-spacing: 2px
-		visibility: hidden
-		cursor: default
-		text-align: center
 
-	&:hover span
-		visibility: visible

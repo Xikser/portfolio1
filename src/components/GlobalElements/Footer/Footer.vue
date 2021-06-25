@@ -23,21 +23,13 @@
 					<a href="" target="_blank">
 						<i class="fab fa-facebook"></i>
 					</a>
+
+					<span>
+						fb.com/daniel.wyskup
+					</span>
 				</div>
 
 				<div class="footer__tile">
-					<a href="" target="_blank">
-						<i class="fab fa-instagram"></i>
-					</a>
-				</div>
-
-				<div class="footer__tile">
-					<a href="" target="_blank">
-						<i class="fab fa-linkedin"></i>
-					</a>
-				</div>
-
-				<div class="footer__tile phone">
 					<a href="#" target="_blank">
 						<i class="fas fa-phone"></i>
 					</a>
@@ -51,6 +43,10 @@
 					<a href="mailto:daniel.wyskup@gmail.com" target="_blank">
 						<i class="fas fa-envelope"></i>
 					</a>
+
+					<span>
+						daniel.wyskup@gmail.com
+					</span>
 				</div>
 
 			</div>
