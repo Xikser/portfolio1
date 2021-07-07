@@ -6,6 +6,7 @@
 <script>
 import Main from "./components/Views/Main/Main";
 import {animation} from './animations/main'
+import {handleWidth} from "@/mixins/mixins";
 
 export default {
 	name: 'App',
@@ -14,6 +15,7 @@ export default {
 		AOS.init()
 		animation.init()
 	},
+	mixins: [handleWidth],
 	data() {
 		return {
 			Component: 'Main',

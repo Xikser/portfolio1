@@ -42,11 +42,11 @@
 </template>
 
 <script>
-import {prepareRouterLinks} from '@/mixins/mixins'
+import {handleWidth, prepareRouterLinks} from '@/mixins/mixins'
 
 export default {
 	name: 'Navbar',
-	mixins: [prepareRouterLinks],
+	mixins: [prepareRouterLinks, handleWidth],
 	data() {
 		return {
 			isVisible: false,
@@ -74,7 +74,7 @@ export default {
 			const currentHeight = window.pageYOffset
 			const navbar = document.querySelector('.navbar')
 
-			if (currentHeight > 700)
+			if (currentHeight > 700 && this.mobile === false)
 				navbar.classList.add('scrolled')
 			else {
 				navbar.classList.remove('transformed')

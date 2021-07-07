@@ -66,7 +66,7 @@ export const prepareRouterLinks = {
 	},
 }
 
-export const handleWith = {
+export const handleWidth = {
 	mounted() {
 		this.handleWidth()
 		window.scrollTo(0, 1)
