@@ -125,3 +125,16 @@
 @for $i from 1 to 10
 	.projects__tile:nth-child(#{$i})
 		transition-delay: $i * 0.3s
+
+@media screen and (min-width: 320px) and (max-width: 980px)
+
+	.projects
+
+		&__tile
+			width: 100%
+
+	.projects__design > .projects__tile
+		width: 100%
+
+	.projects__hosting > .projects__tile
+		width: 100%

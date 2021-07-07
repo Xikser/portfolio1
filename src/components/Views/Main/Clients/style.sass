@@ -58,3 +58,26 @@
 @for $i from 1 to 10
 	.clients__tile:nth-child(#{$i})
 		transition-delay: $i * 0.3s
+
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.clients
+		min-height: 100vh
+
+		&__placeholder1
+			display: none
+
+		.short
+			width: 100%
+
+		&__content
+			height: 100%
+			padding: 50px 25px
+			flex-direction: column
+			justify-content: space-evenly
+
+		&__tile
+			width: 100%
+			text-align: center
+
+			img
+				width: 25%

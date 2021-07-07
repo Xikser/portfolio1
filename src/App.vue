@@ -51,9 +51,10 @@ main
 i
 	color: $color--dark
 
-@media screen and (min-width: 360px) and (max-width: 980px)
+@media screen and (min-width: 320px) and (max-width: 980px)
 	.main
 		width: 100vw
+		padding: 0 10px
 
 	.top
 		display: none

@@ -9,7 +9,6 @@
 
 			<div
 					class="services__tile"
-					data-aos="fade-right"
 					v-for="(item, index) in items"
 					:key="index"
 			>

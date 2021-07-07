@@ -80,3 +80,24 @@
 @for $i from 1 to 10
 	.services__tile:nth-child(#{$i})
 		transition-delay: $i * 0.5s
+
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.services
+
+		.short
+			width: 70%
+
+		&__content
+			flex-direction: column
+			justify-content: center
+			align-items: center
+
+		&__tile
+			width: 100%
+			padding: 50px 0
+
+			&-content
+				text-align: center
+
+		.placeholder-1
+			display: none
