@@ -74,7 +74,7 @@ export default {
 			const currentHeight = window.pageYOffset
 			const navbar = document.querySelector('.navbar')
 
-			if (currentHeight > 700 && this.mobile === false)
+			if (currentHeight > 200 && this.mobile === false)
 				navbar.classList.add('scrolled')
 			else {
 				navbar.classList.remove('transformed')
