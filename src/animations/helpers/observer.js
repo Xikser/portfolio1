@@ -4,7 +4,7 @@ const createObserver = (element) => {
 	let observer
 	let options = {
 		root: null,
-		rootMargin: '0px',
+		rootMargin: '30px 0px 0px 0px',
 		threshold: .5,
 	}
 
