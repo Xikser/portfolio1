@@ -18,16 +18,28 @@
 		border-left: 1px solid rgba(255, 255, 255, .3)
 		border-right: 1px solid rgba(255, 255, 255, .3)
 
-.fa-times
-	position: absolute
-	top: 10%
-	left: 75%
-	z-index: 10001
-	font-size: 2.5rem
-	color: white
-	cursor: pointer
-	transition: all .3s ease
+	.fa-times
+		position: fixed
+		top: 10%
+		left: 75%
+		z-index: 10001
+		font-size: 2.5rem
+		color: white
+		cursor: pointer
+		transition: all .3s ease
 
-	&:hover
-		color: $color--accent
-		transform: scale(1.15)
+		&:hover
+			color: $color--accent
+			transform: scale(1.15)
+
+@media screen and (min-width: 320px) and (max-width: 980px)
+
+	.viewer
+		z-index: 20005
+
+		&__image
+			width: 100%
+
+		.fa-times
+			top: 5%
+			left: 90%
