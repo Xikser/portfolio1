@@ -16,14 +16,6 @@
 					</span>
 				</p>
 
-				<Button
-						buttonStyle='primary'
-						buttonSize="normal"
-						buttonText="Więcej"
-						:additionalElement="true"
-				>
-				</Button>
-
 				<div
 						class="main-about__heading--placeholder"
 						data-anim="draw-left"
