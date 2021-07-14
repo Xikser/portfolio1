@@ -16,6 +16,7 @@
 						buttonStyle="secondary"
 						buttonSize="normal"
 						buttonText="Web design"
+						disabled
 						:class="{isActive : type === 'design'}"
 						@click="handleClick('design')"
 				></Button>
