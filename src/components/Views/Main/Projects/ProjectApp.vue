@@ -19,7 +19,7 @@
 				</div>
 
 				<div key="2" class="projects__box projects__design" v-show="projectType === 'design'">
-					<Telebarek @clicked="handleEvent"></Telebarek>
+
 				</div>
 
 				<div key="3" class="projects__box projects__hosting" v-show="projectType === 'hosting'">
