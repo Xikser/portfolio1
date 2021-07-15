@@ -14,6 +14,12 @@ export default {
 	mounted() {
 		AOS.init()
 		animation.init()
+		window.addEventListener('resize', () => {
+			let w = window.innerWidth
+			if (w < 980) {
+				this.handleWidth()
+			}
+		}, true)
 	},
 	mixins: [handleWidth],
 	data() {
