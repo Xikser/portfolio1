@@ -34,20 +34,14 @@ const routes = [
 ]
 
 const scrollBehavior = (to, from, savedPosition) => {
-  if (to.hash) {
-    setTimeout(() => {
-      const element = document.getElementById(to.hash.replace(/#/, ''))
-      if (element && element.scrollIntoView) {
-        element.scrollIntoView({block: 'start', behavior: 'smooth'})
-      }
-    }, 500)
+	if (to.hash) {
+		const element = document.getElementById(to.hash.replace(/#/, ''))
+		if (element) element.scrollIntoView({block: 'start', behavior: 'smooth'})
 
-    return {el: to.hash};
-  }
-  else if (savedPosition) {
-    return savedPosition
-  }
-  return {top: 0}
+		return {el: to.hash};
+	} else if (savedPosition) return savedPosition
+
+	return {top: 0}
 }
 
 const router = createRouter({
