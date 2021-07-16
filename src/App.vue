@@ -60,8 +60,11 @@ i
 	color: $color--dark
 
 @media screen and (min-width: 320px) and (max-width: 980px)
+	body
+		overflow: scroll
+
 	.main
-		width: 100vw
+		width: 100%
 		padding: 0 10px
 
 	.top
