@@ -11,7 +11,7 @@
 			<i
 					class="fas fa-times fw"
 					:class="{visibleIcon: isVisible}"
-					@click="showNavbar"
+					@click="hideNavbar"
 			>
 			</i>
 		</div>
@@ -72,13 +72,14 @@ export default {
 
 		handleScroll() {
 			const currentHeight = window.pageYOffset
+			const currentWidth = window.innerWidth
 			const navbar = document.querySelector('.navbar')
 
-			if (currentHeight > 200 && this.mobile === false)
-				navbar.classList.add('scrolled')
+			if (currentHeight > 200)
+				if (currentWidth >= 1850) navbar.classList.add('scrolled')
+					else navbar.classList.remove('scrolled')
 			else {
 				navbar.classList.remove('transformed')
-				this.transformed = false
 				navbar.classList.remove('scrolled')
 			}
 		},
@@ -97,8 +98,6 @@ export default {
 
 			if (this.isVisible === true)
 				navbar.classList.add('mobile-visible')
-			else
-				navbar.classList.remove('mobile-visible')
 		},
 
 		emitEvent() {

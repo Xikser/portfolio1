@@ -19,7 +19,7 @@ export default {
 			if (w < 980) {
 				this.handleWidth()
 			}
-		}, true)
+		}, false)
 	},
 	mixins: [handleWidth],
 	data() {
@@ -58,6 +58,16 @@ main
 
 i
 	color: $color--dark
+@media (min-width: 1200px) and (max-width: 1399.98px)
+	.main
+		width: 100%
+		padding: 0 30px
+
+@media (min-width: 981px) and (max-width: 1199.98px)
+
+	.main
+		width: 100%
+		padding: 0 30px
 
 @media screen and (min-width: 320px) and (max-width: 980px)
 	body

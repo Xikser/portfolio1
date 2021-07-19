@@ -22,11 +22,24 @@
 
 	&__list
 		padding: 0
-		width: 50%
+		width: 55%
 		display: flex
 		flex-direction: row
 		align-items: center
 		justify-content: space-between
+
+
+@media (min-width: 1200px) and (max-width: 1399.98px)
+	.project
+
+		&__list
+			width: 65%
+
+@media (min-width: 981px) and (max-width: 1199.98px)
+	.project
+
+		&__list
+			width: 80%
 
 @media screen and (min-width: 320px) and (max-width: 980px)
 	.project
@@ -42,3 +55,7 @@
 
 		&__list
 			width: 100%
+			justify-content: center
+
+			&-item
+				margin: 0 20px
