@@ -80,6 +80,8 @@ export const handleWidth = {
 		handleWidth() {
 			let width = window.innerWidth
 			this.mobile = width <= 980;
+
+			return this.mobile
 		}
 	}
 }
