@@ -5,13 +5,13 @@ const items = [
 		id: 1,
 		icon: 'fas fa-tv',
 		header: 'Development',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tincidunt tellus, a venenatis tellus. Donec a pellentesque dui. Morbi in nibh et quam sodales accumsan. Nullam sodales ac ligula vitae tristique.',
+		text: 'Pamiętaj, że posiadanie strony internetowej w dzisiejszych czasach jest kluczową rzeczą dla prowadzenia skutecznego biznesu. Stworzę Tobie w pełni responsywną stronę internetową opartą na najnowszych technologiach dostosowaną do Twoich potrzeb.',
 	},
 	{
 		id: 2,
 		icon: 'fas fa-paint-brush',
 		header: 'Design',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tincidunt tellus, a venenatis tellus. Donec a pellentesque dui. Morbi in nibh et quam sodales accumsan. Nullam sodales ac ligula vitae tristique.',
+		text: 'Cały czas śledzę obecne trendy na rynku. Pozyskaną wiedzę przekładam na nowoczesny design spełniający oczekiwania klienta. Projekty, które tworzę cechują się unikalnością. Nie znajdziesz drugiej takiej samej strony w internecie.',
 	},
 	// {
 	// 	id: 3,
@@ -23,7 +23,7 @@ const items = [
 		id: 4,
 		icon: 'fas fa-headset',
 		header: 'Wsparcie 24/7',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tincidunt tellus, a venenatis tellus. Donec a pellentesque dui. Morbi in nibh et quam sodales accumsan. Nullam sodales ac ligula vitae tristique.',
+		text: 'Oferuję wsparcie 24/7. Potrzebujesz pilnie pomocy? Nawalił hosting lub nie działa strona? Napisz do mnie na maila lub zadzwoń! Odpowiem w możliwie najkrótszym czasie.',
 	},
 	// {
 	// 	id: 5,
@@ -35,7 +35,7 @@ const items = [
 		id: 6,
 		icon: 'fas fa-server',
 		header: 'Usługi hostingowe',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tincidunt tellus, a venenatis tellus. Donec a pellentesque dui. Morbi in nibh et quam sodales accumsan. Nullam sodales ac ligula vitae tristique.',
+		text: 'Hosting dobieram zawsze do potrzeb klienta. Mam swoich sprawdzonych dostawców, gdzie niska cena idzie w parze z najwyższą jakością.',
 	},
 ]
 

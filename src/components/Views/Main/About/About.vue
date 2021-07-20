@@ -10,9 +10,9 @@
 				</span>
 				</h2>
 
-				<p>Jestem
+				<p> Programowaniem
 					<span>
-						początkującym programistą frontendowym z Bolesławca. Dlaczego frontend? W technikum byłem liderem technicznym ligi e-sportowej, dla której napisałem swoją pierwszą stronę internetową. I tak to się zaczęło...
+						zajmuję się od niecałych 2 lat. W tym czasie ciągle poszerzałem swoją wiedzę i umiejętności, które mogę teraz przełożyć na skuteczny development. Do każdego zlecenia podchodzę z pełnym profesjonalizmem.
 					</span>
 				</p>
 

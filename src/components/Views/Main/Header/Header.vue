@@ -3,7 +3,7 @@
 		<div class="header__content">
 			<div class="header__motto">
 				<h1>Daniel Wyskup</h1>
-				<h2>Freelance Web Developer</h2>
+				<h2>Web Developer</h2>
 				<h2>Potrzebujesz strony internetowej lub bloga?
 					<Button
 						buttonStyle="default"
