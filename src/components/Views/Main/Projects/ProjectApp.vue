@@ -13,9 +13,6 @@
 					<ZawackaRdzen></ZawackaRdzen>
 					<PiekneDrewno></PiekneDrewno>
 					<FotografiaPN></FotografiaPN>
-					<Extemo></Extemo>
-					<Login1></Login1>
-					<Login2></Login2>
 				</div>
 
 				<div key="2" class="projects__box projects__design" v-show="projectType === 'design'">
