@@ -11,26 +11,26 @@
 					</span>
 				</h2>
 
-				<a href="mailto:daniel.wyskup@gmail.com" target="_blank">
+				<p>
 					Skontaktuj się ze mną!
-				</a>
+				</p>
 			</div>
 
 
 			<div class="footer__tile-container">
 
 				<div class="footer__tile">
-					<a href="" target="_blank">
-						<i class="fab fa-facebook"></i>
+					<a href="https://github.com/Xikser" target="_blank">
+						<i class="fab fa-github"></i>
 					</a>
 
 					<span>
-						fb.com/daniel.wyskup
+						github.com/Xikser
 					</span>
 				</div>
 
 				<div class="footer__tile">
-					<a href="#" target="_blank">
+					<a>
 						<i class="fas fa-phone"></i>
 					</a>
 
