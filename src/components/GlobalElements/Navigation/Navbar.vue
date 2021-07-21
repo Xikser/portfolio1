@@ -16,9 +16,9 @@
 			</i>
 		</div>
 
-		<div class="desktop__icons">
-			<div class="bar__icon" @click="transformNavbar"></div>
-			<div class="times__icon" @click="transformNavbar"></div>
+		<div class="desktop__icons" @click="transformNavbar">
+			<div class="bar__icon"></div>
+			<div class="times__icon"></div>
 		</div>
 
 		<ul class="navbar__list">
@@ -75,7 +75,7 @@ export default {
 			const currentWidth = window.innerWidth
 			const navbar = document.querySelector('.navbar')
 
-			if (currentHeight > 200)
+			if (currentHeight > 100)
 				if (currentWidth >= 1850) navbar.classList.add('scrolled')
 					else navbar.classList.remove('scrolled')
 			else {

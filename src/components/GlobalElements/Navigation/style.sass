@@ -9,7 +9,14 @@
 
 .scrolled
 	width: 0
+	height: 100vh !important
 	right: -100% !important
+
+	.navbar__list
+		flex-direction: column !important
+		opacity: 0
+		width: 100%
+		padding: 0
 
 	.desktop__icons
 
@@ -19,12 +26,9 @@
 .transformed
 	width: 12vw !important
 	right: 0 !important
-	height: 100vh !important
 
 	.navbar__list
-		width: 100%
-		padding: 0
-		flex-direction: column !important
+		opacity: 1 !important
 
 	.bar__icon
 		display: none !important
@@ -38,13 +42,14 @@
 	right: 25px
 	width: 50px
 	height: 50px
+	padding: 5px
+	cursor: pointer
 
 	.bar__icon, .times__icon
 		position: absolute
 		display: none
 		width: 40px
 		height: 10px
-		cursor: pointer
 
 	.bar__icon
 		top: 20px
