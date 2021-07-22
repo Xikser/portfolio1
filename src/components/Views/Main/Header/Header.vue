@@ -26,16 +26,7 @@
 	</header>
 </template>
 
-<script>
-export default {
-	name: 'Header',
-	methods: {
-		scrollTo() {
-			window.scrollTo(0, 995)
-		}
-	}
-}
-</script>
+<script src="./component.js"></script>
 
 <style lang="sass" scoped>
 @import './src/assets/sass/variables'

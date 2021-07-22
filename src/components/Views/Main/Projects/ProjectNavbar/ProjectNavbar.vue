@@ -35,23 +35,9 @@
 	</nav>
 </template>
 
-<script>
-export default {
-	data() {
-		return {
-			type: 'website',
-		}
-	},
-	methods: {
-		handleClick(type) {
-			this.$emit('clicked', type)
-			this.type = type
-		}
-	}
-}
-</script>
+<script src="./component.js"></script>
 
 <style lang="sass" scoped>
-@import './src/assets/sass/variables'
-@import 'styles/style-nav'
+@import '../../../../../assets/sass/variables'
+@import 'style-nav'
 </style>

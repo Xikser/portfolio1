@@ -21,17 +21,7 @@
 	</section>
 </template>
 
-<script>
-import photos from './lib'
-
-export default {
-	data() {
-		return {
-			items: photos,
-		}
-	}
-}
-</script>
+<script src="./component.js"></script>
 
 <style lang="sass" scoped>
 @import './src/assets/sass/variables'

@@ -10,7 +10,7 @@
 	</ProjectItem>
 </template>
 <script>
-import ProjectItem from "../../ProjectItem";
+import ProjectItem from "../../ProjectItem/ProjectItem";
 
 export default {
 	components: {ProjectItem},

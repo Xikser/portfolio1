@@ -29,22 +29,7 @@
 	</section>
 </template>
 
-<script>
-import items from './ServicesItem'
-
-export default {
-	data() {
-		return {
-			items: items,
-		}
-	},
-	methods: {
-		scrollTo() {
-			window.scrollTo(0, 3450)
-		}
-	}
-}
-</script>
+<script src="./component.js"></script>
 
 <style lang="sass" scoped>
 @import './src/assets/sass/variables'

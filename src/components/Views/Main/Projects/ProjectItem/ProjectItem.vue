@@ -10,7 +10,7 @@
 </template>
 
 <style lang="sass">
-@import './src/assets/sass/variables'
-@import 'styles/item-style'
-@import 'styles/hosting'
+@import '../../../../../assets/sass/variables'
+@import 'item-style'
+@import '../styles/hosting'
 </style>
