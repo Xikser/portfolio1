@@ -24,19 +24,21 @@
 						<i class="fab fa-github"></i>
 					</a>
 
-					<span>
+					<span class="footer__tile-span">
 						github.com/Xikser
 					</span>
 				</div>
 
-				<div class="footer__tile">
+				<div class="footer__tile phone" @click="copy">
 					<a>
 						<i class="fas fa-phone"></i>
 					</a>
 
-					<span>
-						666 616 882
+					<span class="footer__tile-span phone-span">
+						{{ phone }}
 					</span>
+
+					<span class="copy__text">{{ tooltipText }}</span>
 				</div>
 
 				<div class="footer__tile">
@@ -44,7 +46,7 @@
 						<i class="fas fa-envelope"></i>
 					</a>
 
-					<span>
+					<span class="footer__tile-span">
 						daniel.wyskup@gmail.com
 					</span>
 				</div>
@@ -63,6 +65,33 @@
 		<h3>Wszelkie prawa zastrzeżone &copy | 2021</h3>
 	</footer>
 </template>
+
+<script>
+export default {
+	name: 'Footer',
+	data() {
+		return {
+			tooltipText: 'Kopiuj',
+			phone: '666 616 882',
+		}
+	},
+	methods: {
+		copy() {
+			try {
+				navigator.clipboard.writeText(this.phone)
+				this.tooltipText = 'Skopiowano!'
+
+				setTimeout(() => {
+					this.tooltipText = 'Kopiuj'
+				}, 1500)
+			} catch(err) {
+				this.tooltipText = 'Błąd kopiowania!'
+				throw err
+			}
+		}
+	}
+}
+</script>
 
 <style lang="sass" scoped>
 @import './src/assets/sass/variables'

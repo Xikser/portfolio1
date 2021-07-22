@@ -70,6 +70,13 @@
 		justify-content: center
 		align-items: center
 
+	.phone
+		cursor: pointer
+
+	.phone:hover .copy__text
+		display: block
+		bottom: 100%
+
 	&__tile
 		position: relative
 		margin: 0 30px
@@ -78,6 +85,7 @@
 		flex-direction: column
 
 		a
+			position: relative
 			width: 100%
 			height: 100%
 			font-size: 3rem
@@ -89,7 +97,10 @@
 			i
 				color: white
 
-		span
+		.copy__text
+			top: -100%
+
+		&-span, .copy__text
 			position: absolute
 			min-width: 220px
 			color: white
@@ -101,7 +112,7 @@
 			cursor: default
 			text-align: center
 
-		&:hover span
+		&:hover .footer__tile-span
 			display: block
 
 	&__brief
