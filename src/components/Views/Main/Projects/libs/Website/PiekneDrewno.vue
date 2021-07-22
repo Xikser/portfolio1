@@ -5,7 +5,7 @@
 		</template>
 
 		<template #link>
-			<a class="projects__link" href="" target="_blank">Podgląd projektu</a>
+			<a class="projects__link" href="https://drewno.sensej.dev/" target="_blank">Podgląd projektu</a>
 		</template>
 
 		<template #title>

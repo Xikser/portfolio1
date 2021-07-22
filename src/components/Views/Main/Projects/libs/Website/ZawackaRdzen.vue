@@ -5,7 +5,7 @@
 		</template>
 
 		<template #link>
-			<a href="" target="_blank" class="projects__link">Podgląd projektu</a>
+			<a href="https://zawacka-rdzen.pl/" target="_blank" class="projects__link">Podgląd projektu</a>
 		</template>
 
 		<template #title>
