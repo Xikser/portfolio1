@@ -12,7 +12,7 @@
 
 				<p> Programowaniem
 					<span>
-						zajmuję się od niecałych 2 lat. W tym czasie ciągle poszerzałem swoją wiedzę i umiejętności, które mogę teraz przełożyć na skuteczny development. Do każdego zlecenia podchodzę z pełnym profesjonalizmem.
+						zajmuję się od niecałych 2 lat. Od tamtej pory ciągle poszerzam swoją wiedzę i umiejętności, które mogę teraz przełożyć na skuteczny development. Do każdego zlecenia podchodzę z pełnym profesjonalizmem.
 					</span>
 				</p>
 

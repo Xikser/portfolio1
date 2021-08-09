@@ -11,7 +11,7 @@ const items = [
 		id: 2,
 		icon: 'fas fa-paint-brush',
 		header: 'Design',
-		text: 'Cały czas śledzę obecne trendy na rynku. Pozyskaną wiedzę przekładam na nowoczesny design spełniający oczekiwania klienta. Projekty, które tworzę cechują się unikalnością. Nie znajdziesz drugiej takiej samej strony w internecie.',
+		text: 'Cały czas śledzę obecne trendy na rynku. Pozyskaną wiedzę przekładam na nowoczesny design spełniający oczekiwania klienta. Projekty, które tworzę cechują się unikalnością.',
 	},
 	// {
 	// 	id: 3,
@@ -35,7 +35,7 @@ const items = [
 		id: 6,
 		icon: 'fas fa-server',
 		header: 'Usługi hostingowe',
-		text: 'Hosting dobieram zawsze do potrzeb klienta. Mam swoich sprawdzonych dostawców, gdzie niska cena idzie w parze z najwyższą jakością.',
+		text: 'Hosting dobieram zawsze do potrzeb klienta. Mam swoich sprawdzonych dostawców, gdzie niska cena idzie w parze z najwyższą jakością. Jeśli potrzebujesz pomocy z hostingiem, strona przestała działać, nie wiesz jak załozyć email - skontaktuj się ze mną.',
 	},
 ]
 
